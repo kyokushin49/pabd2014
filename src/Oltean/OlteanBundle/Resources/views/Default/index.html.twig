@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {color:#FF0000;}    /* unvisited link */
+a:visited {color:#00FF00;} /* visited link */
+a:hover {color:#FF00FF;}   /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+</style>
+</head>
+
+<body>
+      <h3>Site personal Oltean Alexandru, va rog alegeti pagina:</h3>
+      <ul>
+        <li><a href="Home"  >{% if parametru=="Home" %} -> Home <- {% else %} Home {% endif %}</a></li>
+        <li><a href="About"  >{% if parametru=="About" %} -> About <- {% else %} About {% endif %}</a></li>
+        <li><a href="Contact"  >{% if parametru=="Contact" %} -> Contact <- {% else %} Contact {% endif %}</a></li>
+      </ul>
+    </div>
+ 
+	{% if parametru=="Home" %}
+          <h2>Bun venit pe site-ul meu</h2>
+          <p>Aceasta este pagina Home.</p>
+          <p>Va multumesc pentru vizita!</p>
+	{% elseif parametru=="About" %}
+          <h2>About</h2>
+          <ul>
+            <li>Masterand <strong>Universitatea 1 Decembrie 1918 Alba Iulia</strong></li>
+            <li>Administrator retea <strong>S.C. SEWS-R S.R.L.</strong> </li>
+          </ul>
+	{% elseif parametru=="Contact" %}
+          <h2>Contact</h2>
+          <ul>
+            <li>Email: <strong>kyokushin49@yahoo.com</strong></li>
+            <li>Telefon: <strong>0749408781</strong> </li>
+            <li>Adresa: <strong>Alba Iulia</strong></li>
+          </ul>
+	{% endif %}
+</body>
+</html>

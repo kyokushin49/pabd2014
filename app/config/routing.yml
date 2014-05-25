@@ -1,0 +1,4 @@
+oltean_oltean:
+    resource: "@OlteanOlteanBundle/Resources/config/routing.yml"
+    prefix:   /
+

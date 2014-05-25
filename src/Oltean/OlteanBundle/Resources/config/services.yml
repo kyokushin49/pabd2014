@@ -1,0 +1,7 @@
+parameters:
+#    oltean_oltean.example.class: Oltean\OlteanBundle\Example
+
+services:
+#    oltean_oltean.example:
+#        class: %oltean_oltean.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

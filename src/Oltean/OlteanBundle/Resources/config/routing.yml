@@ -1,0 +1,9 @@
+oltean_oltean_homepage:
+    pattern:  /Oltean
+    defaults: { _controller: OlteanOlteanBundle:Default:index }
+oltean_oltean_homepage:
+    pattern:  /Oltean/
+    defaults: { _controller: OlteanOlteanBundle:Default:index }
+oltean_oltean_parametri:
+    pattern:  /Oltean/{parametru}
+    defaults: { _controller: OlteanOlteanBundle:Default:index }
